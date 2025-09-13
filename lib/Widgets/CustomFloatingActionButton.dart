@@ -72,13 +72,13 @@ class _CustomFloatingActionButtonState extends State<CustomFloatingActionButton>
                           },
 
                           child: Container(
-                            margin: EdgeInsets.all(12),
+                            margin:const EdgeInsets.all(12),
                             width: 150,
                             height: 150,
                             decoration: BoxDecoration(
                               border: Border.all(
-                                color: Color(0xffFFF1D4),
-                                width: 3,
+                                color: const Color(0xffFFF1D4),
+                                width: 1,
                               ),
                               borderRadius: BorderRadius.circular(15),
                             ),

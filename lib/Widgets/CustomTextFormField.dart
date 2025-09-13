@@ -20,7 +20,7 @@ class CustomTextFormField extends StatefulWidget {
 
 class _CustomTextFormFieldState extends State<CustomTextFormField> {
   final RegExp namePattern  = RegExp(r'^[a-zA-Z\s]+$');
-  final RegExp emailPattern = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+  final RegExp emailPattern = RegExp(r'^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,4}$');
   final RegExp phonePattern = RegExp(r'^(010|011|012|015)[0-9]{8}$');
 
   @override

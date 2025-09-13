@@ -1,4 +1,4 @@
-import 'package:contact_app/Widgets/GrideViewOfContact.dart';
+import 'package:contact_app/Widgets/GridViewOfContact.dart';
 import 'package:contact_app/Widgets/CustomFloatingActionButton.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -63,14 +63,16 @@ class _HomeScreenState extends State<HomeScreen> {
                CustomFloatingActionButton(
                  delete: () {
                    setState(() {
-                     if (contacts.isNotEmpty) contacts.removeLast();
+                     if (contacts.isNotEmpty)
+                       contacts.removeLast();
                    });
                  },
                 contacts:contacts,
                 btnDelete: true,
               ),
              const  SizedBox(height: 10,),
-             contacts.length<6 ?  CustomFloatingActionButton(contacts: contacts,
+             contacts.length<6 ?  CustomFloatingActionButton(
+               contacts: contacts,
                add: (newContact) {
                  setState(() {
                    contacts.add(newContact);

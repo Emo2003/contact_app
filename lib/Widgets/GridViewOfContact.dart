@@ -16,7 +16,7 @@ class _CustomGridViewState extends State<CustomGridView> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      padding:EdgeInsets.only(top: 27, left: 16, right: 16),
+      padding:const EdgeInsets.only(top: 27, left: 16, right: 16),
       gridDelegate:
          const SliverGridDelegateWithFixedCrossAxisCount
       (crossAxisCount: 2,
@@ -77,7 +77,7 @@ class _CustomGridViewState extends State<CustomGridView> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       Row(
                         children: [
                          const Icon(Icons.email, size: 18, color: Color(0xff29384D)),
@@ -98,8 +98,8 @@ class _CustomGridViewState extends State<CustomGridView> {
                       const SizedBox(height: 8),
                       Row(
                         children: [
-                          Icon(Icons.phone, size: 18, color: Color(0xff29384D)),
-                          SizedBox(width: 5),
+                          const Icon(Icons.phone, size: 18, color: Color(0xff29384D)),
+                         const SizedBox(width: 5),
                           Expanded(
                             child: Text(
                               contact.phone,
